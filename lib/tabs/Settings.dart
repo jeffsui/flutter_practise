@@ -10,16 +10,34 @@ class _SettingPageState extends State<SettingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        //no leading property will display a three dashes icon
+      ),
       drawer: Drawer(
       child: ListView(
-        padding: EdgeInsets.zero,
+        padding: EdgeInsets.only(),
         children: <Widget>[
-          DrawerHeader(
-            child: Text('Drawer Header'),
+          UserAccountsDrawerHeader(
+            accountName: Text('凭海临风'),
+            accountEmail: Text('pinghailinfeng79@gmail.com'),
+            currentAccountPicture: CircleAvatar(
+              //CircleAvatar:circle header image 
+              backgroundImage: NetworkImage('https://jeffsui.github.io/images/avatar.jpg'),
+            ),
             decoration: BoxDecoration(
-              color: Colors.blue,
+              image: DecorationImage(
+                fit: BoxFit.fill,
+                image: NetworkImage('http://www.liulongbin.top:3005/images/bg1.jpg')
+              )
             ),
           ),
+        
+          // DrawerHeader(
+          //   child: Text('Drawer Header'),
+          //   decoration: BoxDecoration(
+          //     color: Colors.blue,
+          //   ),
+          // ),
           ListTile(
             title: Text('Item 1'),
             onTap: (){
