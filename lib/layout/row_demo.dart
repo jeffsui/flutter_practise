@@ -23,7 +23,7 @@ class RowDemo extends StatelessWidget {
     );
   }
   static Color color = Colors.blue;
-  Widget buttonSection=Container(
+  final Widget buttonSection=Container(
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
@@ -33,7 +33,7 @@ class RowDemo extends StatelessWidget {
       ],
     ),
   );
-  Widget textSection = Container(
+  final Widget textSection = Container(
   padding: const EdgeInsets.all(32),
   child: Text(
     'Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese '
@@ -45,7 +45,7 @@ class RowDemo extends StatelessWidget {
     softWrap: true,
   ),
 );
-  Widget titleSection = Container(
+ final Widget titleSection = Container(
     padding: const EdgeInsets.all(32),
     child: Row(
       children: [
