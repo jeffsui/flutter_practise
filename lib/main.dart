@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/navigator/First_Screen.dart';
+import 'package:myapp/navigator/navigation_home.dart';
 import 'package:myapp/navigator/todo_screen.dart';
 // import 'mytabs.dart';
 import 'layout/row_demo.dart';
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     
     return MaterialApp(
-      home:TodoScreen(todos: todos,),
+      home:NavigationHomeScreen(),
     );
   }
 }
