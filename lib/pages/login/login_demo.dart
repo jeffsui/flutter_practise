@@ -8,8 +8,12 @@ class LoginDemo extends StatelessWidget {
     final emailField = TextField(
       style: style,
       decoration: InputDecoration(
+        fillColor: Colors.blue.shade100,
+        filled: true,
+        labelText: '电子邮件',
         contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
         hintText: "Email",
+        prefixIcon: Icon(Icons.email),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(32.0),
         )
@@ -18,8 +22,12 @@ class LoginDemo extends StatelessWidget {
     final passwordField = TextField(
       style: style,
       decoration: InputDecoration(
+        fillColor: Colors.blue.shade100,
+        filled: true,
+        labelText: "登录密码",
         contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
         hintText: "Password",
+        prefixIcon: Icon(Icons.alarm),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(32.0),
         )
