@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
-class LoginDemo extends StatelessWidget {
-  TextStyle style = TextStyle(fontFamily: 'Montserrat', fontSize: 20.0);
+class LoginDemo extends StatefulWidget {
+  @override
+  _LoginDemoState createState() => _LoginDemoState();
+}
+
+class _LoginDemoState extends State<LoginDemo> {
+ TextStyle style = TextStyle(fontFamily: 'Montserrat', fontSize: 20.0);
   
   @override
   Widget build(BuildContext context) {
@@ -55,7 +60,7 @@ class LoginDemo extends StatelessWidget {
       resizeToAvoidBottomPadding: false,
       body: Center(
         child: Container(
-          color: Colors.white,
+          //color: Colors.white,
           child: Padding(
             padding: const EdgeInsets.all(36.0),
             child: Column(
@@ -82,6 +87,12 @@ class LoginDemo extends StatelessWidget {
 
               ],
             ),
+          ),
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('images/girl/beauty5.jpg'),
+              fit: BoxFit.fill,
+            )
           ),
         ),
       ),
